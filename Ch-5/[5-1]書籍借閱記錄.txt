@@ -1,0 +1,20 @@
+﻿{
+	_id:"4-1_1",
+	book:"實用英文會話",
+	price:299.0, authors: ["Jason", "Mary", "Bob"],
+	borrower:{
+		name:"王小明",
+		timestamp:ISODate("2015-07-23T12:00:00Z")
+	}
+}
+{
+	_id:"4-1_2",
+	book:"七天學會大數據資料庫處理－NoSQL:MongoDB入門與活用",
+	price:360.0, authors: ["黃小嘉"],
+	borrower:{name:"王小明", timestamp:ISODate("2015-07-24T12:30:00Z")}
+}
+{
+	_id:"4-1_3",
+	book:"日本環球影城全攻略",
+	price:280, authors: ["Jason", "Mary", "Bob"]
+}
