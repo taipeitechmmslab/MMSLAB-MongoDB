@@ -1,0 +1,36 @@
+﻿{
+	"profile":{"name":"林小宏","id":"108418005"},
+	"course":{
+		"102-1":[
+			{"course_id":"179729","course_name":"專題討論(A)","credits":1},
+			{"course_id":"187174","course_name":"數位影像處理","credits":3},
+			{"course_id":"179746","course_name":"軟硬體共同設計","credits":3},
+			{"course_id":"179787","course_name":"VLSI系統架構設計","credits":1},
+			{"course_id":"187670","course_name":"高等計算機視覺","credits":3}
+		]
+		,"102-2":[
+			{"course_id":"182495","course_name":"專題討論(A)","credits":1},
+			{"course_id":"182515","course_name":"資料庫系統","credits":3},
+			{"course_id":"190446","course_name":"數位電視設計","credits":3},
+			{"course_id":"190517","course_name":"最佳化概論","credits":3}
+		]
+	}
+}
+{
+	"profile":{"name":"劉小賓","id":"108418006"},
+	"course":{
+		"102-1":[
+			{"course_id":"179729","course_name":"專題討論(A)","credits":1},
+			{"course_id":"187174","course_name":"數位影像處理","credits":3},
+			{"course_id":"187182","course_name":"互動式娛樂服務之音訊處理技術","credits":3},
+			{"course_id":"187656","course_name":"職場達人-自傳履歷與面試實務","credits":1},
+			{"course_id":"187670","course_name":"高等計算機視覺","credits":3}
+		],
+		"102-2":[
+			{"course_id":"182495","course_name":"專題討論(A)","credits":1},
+			{"course_id":"182515","course_name":"資料庫系統","credits":3},
+			{"course_id":"190446","course_name":"數位電視設計","credits":3},
+			{"course_id":"190517","course_name":"最佳化概論","credits":3}
+		]
+	}
+}

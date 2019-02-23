@@ -1,0 +1,24 @@
+{ 
+	_id: "001",
+	group: "臺北大車隊",
+	status: "busy", 
+	seatInfo: { capacity : 5, remaining: 4, riding: 1 },
+	location: [121.517224, 25.047974],
+	lastModified: ISODate("2015-12-12T12:00:00")
+}
+{
+	_id: "002",
+	group: "臺北大車隊",
+	status: "busy",
+	seatInfo: { capacity : 5, remaining: 1, riding: 4 },
+	location: [121.517224, 25.047974],
+	lastModified: ISODate("2015-12-14T12:00:00")
+}
+{
+	_id: "003",
+	group: "臺北大車隊",
+	status: "rest",
+	seatInfo: { capacity : 5, remaining: 5, riding: 0 },
+	location: [121.549916, 25.050594],
+	lastModified: ISODate("2015-12-02T12:00:00")
+}

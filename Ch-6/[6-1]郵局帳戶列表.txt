@@ -1,0 +1,3 @@
+{ _id: "001", name: "小明", balance: 1500 }
+{ _id: "002", name: "小華", balance: 3200 }
+{ _id: "003", name: "小花", balance: 2400 }

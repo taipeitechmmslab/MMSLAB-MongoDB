@@ -1,0 +1,3 @@
+﻿{ _id: "001", studentNumber: "102418099", studentName: "小眀", score: 50}
+{ _id: "002", studentId: "102418098", studentName: "小華", score: 80}
+{ _id: "003", studentId: "102418097", studentName: "小花", score: 120}

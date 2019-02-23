@@ -1,0 +1,3 @@
+{ _id: "001", product: "Sony, SBH60", type: "USD", price: 76.4 }
+{ _id: "002", product: "Sony, SBH70", type: "USD", price: 75.8 }
+{ _id: "003", product: "Sony, SBH80", type: "NTD", price: 2980 }
