@@ -1,10 +1,10 @@
-{ "_id" : 1, "name" : "Alan Lin", sex:"M", score: 53, exam:[{score: 90, type:"Math"},{score: 40, type:"English"},{score: 30, type:"History"}] }
-{ "_id" : 2, "name" : "Jimmy Lin", sex:"M", score: 84, exam:[{score: 66, type:"Math"},{score: 98, type:"English"},{score: 88, type:"History"}] }
-{ "_id" : 3, "name" : "David Huang", sex:"M", score: 76, exam:[{score: 38, type:"Math"},{score: 98, type:"English"},{score: 92, type:"History"}] }
-{ "_id" : 4, "name" : "Kobe Chen", sex:"F", score: 75, exam:[{score: 98, type:"Math"},{score: 60, type:"English"},{score: 68, type:"History"}] }
-{ "_id" : 5, "name" : "Eric Lin", sex:"M", score: 81, exam:[{score: 78, type:"Math"},{score: 86, type:"English"},{score: 78, type:"History"}] }
-{ "_id" : 6, "name" : "Peter Huang", sex:"M", score: 83, exam:[{score: 80, type:"Math"},{score: 78, type:"English"},{score: 90, type:"History"}] }
-{ "_id" : 7, "name" : "Lisa Chen", sex:"F", score: 65, exam:[{score: 60, type:"Math"},{score: 76, type:"English"},{score: 60, type:"History"}] }
-{ "_id" : 8, "name" : "John Wang", sex:"F", score: 75, exam:[{score: 78, type:"Math"},{score: 68, type:"English"},{score: 80, type:"History"}] }
-{ "_id" : 9, "name" : "Sophia Hsu", sex:"F", score: 70, exam:[{score: 56, type:"Math"},{score: 58, type:"English"},{score: 96, type:"History"}] }
-{ "_id" : 10, "name" : "Linda Chen", sex:"F", score: 52, exam:[{score: 24, type:"Math"},{score: 34, type:"English"},{score: 98, type:"History"}] }
+{ "_id" : 1, "name" : "Alan Lin", score: 53, exam:[{score: 90, type:"Math"},{score: 40, type:"English"},{score: 30, type:"History"}] }
+{ "_id" : 2, "name" : "Jimmy Lin", score: 84, exam:[{score: 66, type:"Math"},{score: 98, type:"English"},{score: 88, type:"History"}] }
+{ "_id" : 3, "name" : "David Huang", score: 76, exam:[{score: 38, type:"Math"},{score: 98, type:"English"},{score: 92, type:"History"}] }
+{ "_id" : 4, "name" : "Kobe Chen", score: 75, exam:[{score: 98, type:"Math"},{score: 60, type:"English"},{score: 68, type:"History"}] }
+{ "_id" : 5, "name" : "Eric Lin", score: 81, exam:[{score: 78, type:"Math"},{score: 86, type:"English"},{score: 78, type:"History"}] }
+{ "_id" : 6, "name" : "Peter Huang", score: 83, exam:[{score: 80, type:"Math"},{score: 78, type:"English"},{score: 90, type:"History"}] }
+{ "_id" : 7, "name" : "Jacky Chen", score: 65, exam:[{score: 60, type:"Math"},{score: 76, type:"English"},{score: 60, type:"History"}] }
+{ "_id" : 8, "name" : "John Wang", score: 75, exam:[{score: 78, type:"Math"},{score: 68, type:"English"},{score: 80, type:"History"}] }
+{ "_id" : 9, "name" : "Sophia Hsu", score: 70, exam:[{score: 56, type:"Math"},{score: 58, type:"English"},{score: 96, type:"History"}] }
+{ "_id" : 10, "name" : "Linda Chen", score: 52, exam:[{score: 24, type:"Math"},{score: 34, type:"English"},{score: 98, type:"History"}] }
