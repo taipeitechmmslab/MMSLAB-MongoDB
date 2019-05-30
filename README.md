@@ -1,3 +1,7 @@
+# 書籍
+7天學會大數據資料處理—NoSQL（第三版）：MongoDB入門與活用
+https://www.books.com.tw/products/0010822310
+
 # MMSLAB-MongoDB Ch1-Ch10的檔案
 MongoDB 安裝程式、範例、資料、專案
 
