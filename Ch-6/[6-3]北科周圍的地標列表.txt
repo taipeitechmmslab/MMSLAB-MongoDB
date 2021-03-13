@@ -1,0 +1,19 @@
+{
+	_id:"4-3_1",
+	name:"中山女中",
+	location: { type: "Point", coordinates: [ 121.537034, 25.048499 ] } 
+}
+{
+	_id:"4-3_2",
+	name:"國立台北商業大學",
+	location: { type: "Point", coordinates: [ 121.525256, 25.042267 ] } 
+}
+{
+	_id:"4-3_3",
+	name:"行政院",
+	location: { type: "Point", coordinates: [ 121.520958, 25.046316 ] } 
+}
+{
+	_id:"4-3_4",
+	name:"國立台灣博物館", location: { type: "Point", coordinates: [ 121.514940, 25.042751 ] }
+}

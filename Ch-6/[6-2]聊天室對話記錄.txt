@@ -1,0 +1,13 @@
+{
+	_id:"4-2_1",
+	members: [ "Jason", "Bob" ],
+	messages: [ 
+		{ sender:"Jason", content:"Hello"},
+		{ sender:"Bob", content:"Hi"},
+		{ sender:"Jason", content:"午餐要吃什麼"},
+		{ sender:"Jason", content:"吃義大利麵!?"},
+		{ sender:"Bob", content:"走阿"}
+	]
+}
+{_id:"4-2_2", members:[ "Jason", "Mary" ], messages:[]}
+{_id:"4-2_3", members:[ "Bob", "Mary" ], messages:[]}
