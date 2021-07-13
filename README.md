@@ -6,10 +6,11 @@
 
 近期更動：
 
+2021/07/13  提供相關軟體下載連結
 2021/03/20  將2019版本範例歸檔，並提供2021版本範例。
 
 # 本書提供之檔案內容
-包含資料庫所需資料、C#專案程式碼、Postman指令集合。
+包含資料庫所需資料、C#專案程式碼、Postman指令集合，而本書所提及之相關軟體可至[此處下載](https://drive.google.com/drive/folders/1da0BTosUI4y7rFNoesSoeWbqE_AF59Q8?usp=sharing)。
 
 ## Ch-3
 - [3-1]學生選課資料.txt
