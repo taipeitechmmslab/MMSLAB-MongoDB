@@ -209,8 +209,8 @@ namespace Lab7
                 /* 建立更新方式為currency欄位的cash欄位增加存入金額、
                 * currency欄位的lastModified欄位改為現在時間 */
                 var update = builderAccountsUpdate
-                    .Inc(e => e.currency[-1].cash, cash)
-                    .CurrentDate(e => e.currency[-1].lastModified);
+                    .Inc(e => e.currency[num - 1].cash, cash)
+                    .CurrentDate(e => e.currency[num - 1].lastModified);
                 //進行條件篩選並更新
                 var result = colAccounts.UpdateMany(filter, update);
                 //依據更新數量判斷是否有成功更新，並顯示結果
@@ -263,8 +263,8 @@ namespace Lab7
                 /* 建立更新方式為currency欄位的cash欄位減少提領金額、
                 * currency欄位的lastModified欄位改為現在時間 */
                 var update = builderAccountsUpdate
-                    .Inc(e => e.currency[-1].cash, -cash)
-                    .CurrentDate(e => e.currency[-1].lastModified);
+                    .Inc(e => e.currency[num - 1].cash, -cash)
+                    .CurrentDate(e => e.currency[num - 1].lastModified);
                 //進行條件篩選並更新
                 var result = colAccounts.UpdateMany(filter, update);
                 //依據更新數量判斷是否有成功更新，並顯示結果

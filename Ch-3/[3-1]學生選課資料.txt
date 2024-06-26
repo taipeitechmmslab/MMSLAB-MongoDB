@@ -1,4 +1,4 @@
-db.students.insert([{
+db.students.insertMany([{
 	"profile":{"name":"林小宏","id":"108418005"},
 	"course":{
 		"110-1":[

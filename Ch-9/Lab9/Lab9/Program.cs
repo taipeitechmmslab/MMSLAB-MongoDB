@@ -57,48 +57,48 @@ namespace Lab9
             void countTaipeiPeopleAndAvgAge()
             {
                 Console.WriteLine("1.計算來自台北市各個分區之消費者的總人數與平均年齡\n");
-                //建立字串類型的Map函式(@表示讓字串內的跳脫字元失效)
-                string map = @"
-                    function() {
-                        emit(this.district, { count: 1, age: this.age });
-                    }
-                ";
-                //建立字串類型的Reduce函式(@表示讓字串內的跳脫字元失效)
-                string reduce = @"
-                    function(key, values) {
-                        var reduced = {count:0, age:0};
-                        for(var idx=0 ; idx<values.length ; idx++)
+                //建立管線階段
+                var pipeline = new BsonDocument[]
+                {
+                    new BsonDocument
+                    {
                         {
-                            var val = values[idx];
-                            reduced.age += val.age;
-                            reduced.count+= val.count;
+                            "$match", new BsonDocument
+                            {
+                                {"city", "台北市"}
+                            }
                         }
-                        return reduced;
+                    },
+                    new BsonDocument
+                    {
+                        {
+                            "$group", new BsonDocument
+                            {
+                                {"_id", "$district"},
+                                {
+                                    "count", new BsonDocument
+                                    {
+                                        {"$sum", 1}
+                                    }
+                                },
+                                {
+                                    "avgAge", new BsonDocument
+                                    {
+                                        {"$avg", "$age"}
+                                    }
+                                }
+                            }
+                        }
                     }
-                ";
-                //建立字串類型的Finalize函式(@表示讓字串內的跳脫字元失效)
-                string finalize = @"
-                    function(key, reduced) {
-                        reduced.avgAge = reduced.age / reduced.count;
-                        return reduced;
-                    }
-                ";
-                //建立查詢條件為city欄位為台北市
-                var builderCustomersFilter = Builders<CustomersDocument>.Filter;
-                var filter = builderCustomersFilter.Eq(e => e.city, "台北市");
-                //建立Map-Reduce的其他選項，包含篩選條件、Finalize函式、輸出方式
-                var options = new MapReduceOptions<CustomersDocument, BsonDocument>
-                {
-                    Filter = filter,
-                    Finalize = finalize,
-                    OutputOptions = MapReduceOutputOptions.Inline
                 };
-                //傳入Map函式、Reduce函式及其他選項，以執行Map-Reduce並取得結果
-                var result = colCustomers.MapReduce(map, reduce, options).ToListAsync().Result;
-                //使用foreach遍歷Map-Reduce結果，並轉為Json格式顯示於Console
-                foreach (var data in result)
+                //傳入管線階段，以執行Aggregation Pipeline並取得結果
+                var results = colCustomers.Aggregate<BsonDocument>(pipeline).ToListAsync().Result;
+                //將結果顯示於Console
+                foreach (var result in results)
                 {
-                    Console.WriteLine(data.ToJson());
+                    Console.WriteLine($"分區: {result["_id"]}");
+                    Console.WriteLine($"總人數: {result["count"]}");
+                    Console.WriteLine($"平均年齡: {result["avgAge"]}\n");
                 }
             }
             #endregion

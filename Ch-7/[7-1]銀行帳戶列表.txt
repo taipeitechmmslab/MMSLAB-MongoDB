@@ -1,32 +1,34 @@
-{
-    "_id": "001",
-    "name": "小明",
-    "currency": [ 
-        {
-            "type": "TWD",
-            "cash": 1500,
-            "lastModified": ISODate("2021-01-01T12:00:00Z")
-        },
-        {
-            "type": "USD",
-            "cash": 9.99,
-            "lastModified": ISODate("2021-01-02T12:00:00Z")
-        }
-    ]
-}
-{
-    "_id": "002",
-    "name": "小華",
-    "currency": [ 
-        {
-            "type": "USD",
-            "cash": 75.59,
-            "lastModified": ISODate("2021-01-03T12:00:00Z")
-        }
-    ]
-}
-{
-    "_id": "003",
-    "name": "小花",
-    "currency": []
-}
+[
+    {
+        "_id": "001",
+        "name": "小明",
+        "currency": [ 
+            {
+                "type": "TWD",
+                "cash": 1500,
+                "lastModified": "2021-01-01T12:00:00Z"
+            },
+            {
+                "type": "USD",
+                "cash": 9.99,
+                "lastModified": "2021-01-02T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "_id": "002",
+        "name": "小華",
+        "currency": [ 
+            {
+                "type": "USD",
+                "cash": 75.59,
+                "lastModified": "2021-01-03T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "_id": "003",
+        "name": "小花",
+        "currency": []
+    }
+]

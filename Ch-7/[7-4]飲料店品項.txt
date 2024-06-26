@@ -1,3 +1,5 @@
-{ _id: "001", product: "日月潭紅茶", type: "tea", price: {M:20,L:30}, sold:0, log:[] }
-{ _id: "002", product: "金鑽鳳梨綠", type: "fruit", price: {M:40,L:50}, sold:0, log:[] }
-{ _id: "003", product: "黑糖粉圓鮮奶", type: "tea latte", price: {M:50,L:65}, sold:0, log:[] }
+[
+    { "_id": "001", "product": "日月潭紅茶", "type": "tea", "price": {"M":20,"L":30}, "sold":0, "log":[] },
+    { "_id": "002", "product": "金鑽鳳梨綠", "type": "fruit", "price": {"M":40,"L":50}, "sold":0, "log":[] },
+    { "_id": "003", "product": "黑糖粉圓鮮奶", "type": "tea latte", "price": {"M":50,"L":65}, "sold":0, "log":[] }
+]

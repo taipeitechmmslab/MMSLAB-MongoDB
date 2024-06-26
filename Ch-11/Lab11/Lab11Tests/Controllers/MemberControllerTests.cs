@@ -14,7 +14,6 @@ namespace Lab11.Controllers.Tests
         public string name { get; set; } //會員姓名
         public string phone { get; set; } //會員電話
     }
-
     [TestClass()]
     public class MemberControllerTests
     {

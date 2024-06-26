@@ -1,7 +1,4 @@
-﻿//匯入函式庫
-using System.Collections.Generic;
-
-namespace Lab11.Models
+﻿namespace Lab11.Models
 {
     public class GetMemberListResponse
     {
@@ -19,6 +16,7 @@ namespace Lab11.Models
             this.list = new List<MemberInfo>();
         }
     }
+
     public class MemberInfo
     {
         //取得的會員資訊的會員編號uid欄位為字串
