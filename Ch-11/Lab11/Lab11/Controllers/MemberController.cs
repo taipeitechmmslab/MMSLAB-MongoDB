@@ -1,17 +1,12 @@
-﻿//匯入函式庫
+﻿using Lab11.Models;
+using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using Lab11.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 
 namespace Lab11.Controllers
 {
-    public class MemberController : ApiController
+    [ApiController]
+    public class MemberController : ControllerBase
     {
         // [指令1] 「新增」會員資訊
         // POST api/member
@@ -200,15 +195,13 @@ namespace Lab11.Controllers
         }
         // [指令6] 狀態檢查
         // GET /
-        // 使用Route Attributes 指定路由為/且方法為Get
+        /* 使用Route Attributes 指定路由為/且方法為Get */
         [Route("")]
         [HttpGet]
-        public HttpResponseMessage GetHealth()
+        public string GetHealth()
         {
-            var response = Request.CreateResponse(HttpStatusCode.OK);
-            response.StatusCode = HttpStatusCode.OK;
-            response.Content = new StringContent($"{System.Configuration.ConfigurationManager.AppSettings["EnvInfo"]} Web API is running!");
-            return response;
+            var mongodbUrl = EnvService.ConfigRoot["MongodbUrl"];
+            return $"mongodbUrl is {mongodbUrl}";
         }
     }
 }
